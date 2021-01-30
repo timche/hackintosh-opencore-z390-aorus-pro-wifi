@@ -1,24 +1,26 @@
-# Hackintosh
+# Hackintosh (OpenCore, Z390 Aorus Pro WiFi)
 
-> Personal OpenCore configuration and files for Intel Core i7-9700K, Gigabyte Z390 Aorus Pro WiFi and Intel UHD Graphics 630 (iGPU)
+> Personal OpenCore configuration for Gigabyte Z390 Aorus Pro WiFi, Intel Core i7-9700K and Intel UHD Graphics 630 (iGPU)
 
 ![](./.github/about-this-mac.png)
 
 ## Disclaimer
 
-I don't recommend you to copy my configuration and files. You should know what you are doing and learn how to configure and use OpenCore. This repository is publicly available only for learning and inspiration purposes.
+This is my personal configuration and I made it publicly available for educational and inspirational purposes only. Please learn how to configure and install OpenCore using the [OpenCore Install Guide](https://dortania.github.io/OpenCore-Install-Guide/). I'm not responsible for any damage nor will I give support.
 
-## Software Versions
+Don't use and trust any OpenCore files (drivers, kexts, etc.) that are not from the official sources. Always gather/compile them yourself.
 
-- OpenCore: 0.5.9
-- macOS: 10.5.5 (Catalina)
+## Software
+
+- OpenCore: 0.6.5
+- macOS: 10.5.7 (Catalina)
 
 ## Hardware
 
-- CPU: Intel Core i7-9700K
 - Motherboard: Gigabyte Z390 Aorus Pro WiFi
+- CPU: Intel Core i7-9700K
 - iGPU: Intel UHD Graphics 630
-- GPU: ASUS ROG Strix GeForce GTX 1070 Ti Advanced OC *(Disabled)*
+- GPU: ASUS ROG Strix GeForce GTX 1070 Ti Advanced OC _(Disabled)_
 - RAM: Corsair 16GB DDR4 Vengeance LPX 3200 MHz
 - SSD:
   - Crucial MX500 500GB M.2
@@ -33,11 +35,11 @@ I don't recommend you to copy my configuration and files. You should know what y
 - Speakers: Audioengine A2+
 - Monitor: Acer Nitro XF252Q (1080p)
 
-## Working
+## Features
 
-*Work in progress.*
+Only essential features are listed below and may be incomplete, but updated/fixed if necessary.
 
-Everything listed below is working out of the box unless stated otherwise.
+### Working
 
 - Hardware Acceleration
 - Onboard Audio
@@ -46,28 +48,30 @@ Everything listed below is working out of the box unless stated otherwise.
 - Ethernet
 - USB 3.0
 - iServices
+  - FaceTime
+  - iMessage
 
-## Not Working
-
-*Work in progress.*
+### Not Working
 
 - USB 2.0
 - Bluetooth
-- WiFi *(Disabled anyway)*
+- WiFi _(Disabled anyway)_
 
-## Geekbench
+## `config.plist`
 
-![](./.github/geekbench.png)
+Values that are `{{REPLACE_ME}}` must be replaced with actual values.
 
-## Quirks
-
-These quirks are only specific to this hardware.
-
-### `config.plist`
+### Quirks
 
 #### `DeviceProperties/Add/PciRoot(0x0)/Pci(0x2,0x0)`
 
-- With macOS 10.15.5 the recommended value `07009B3E` for `AAPL,ig-platform-id` isn't working (anymore) for UHD 630. 
-  - Fix: The alternative value `00009B3E` is working.
-- Using only the suggested keys from the [OpenCore Coffee Lake guide](https://dortania.github.io/OpenCore-Desktop-Guide/config.plist/coffee-lake.html#deviceproperties) `AAPL,ig-platform-id`, `framebuffer-patch-enable` and `framebuffer-stolenmem` isn't sufficient and will result in getting no video signal/black screen after OpenCore verbose/boot.
-  - Fix: [iGPU BusID Patching](https://dortania.github.io/OpenCore-Desktop-Guide/extras/gpu-patches.html#igpu-busid-patching) is necessary. After several reboots, it's port 3 and busID `04` to get a video signal (`AAPL,ig-platform-id` must be working beforehand).
+- With macOS 10.15.5 the recommended value `07009B3E` for `AAPL,ig-platform-id` isn't working (anymore) for Intel UHD 630 and will result it a black screen.
+  - Fix: Use the alternative value `00009B3E`.
+- Using only the suggested keys from the [OpenCore Coffee Lake Guide](https://dortania.github.io/OpenCore-Install-Guide/config.plist/coffee-lake.html#deviceproperties) `AAPL,ig-platform-id`, `framebuffer-patch-enable` and `framebuffer-stolenmem` aren't sufficient and will result in a black screen after the OpenCore boot sequence.
+  - Fix: [iGPU BusID Patching](https://dortania.github.io/OpenCore-Desktop-Guide/extras/gpu-patches.html#igpu-busid-patching) is necessary. After several reboots, it's port 3 and busID `04` to get a video signal (Note: `AAPL,ig-platform-id` must be set to a working value beforehand).
+
+## Benchmark
+
+### Geekbench
+
+![](./.github/geekbench.png)

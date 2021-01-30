@@ -75,3 +75,9 @@ Values that are `{{REPLACE_ME}}` must be replaced with actual values.
 ### Geekbench
 
 ![](./.github/geekbench.png)
+
+## Bookmarks
+
+- [BIOS Settings](https://dortania.github.io/OpenCore-Install-Guide/config.plist/coffee-lake.html#intel-bios-settings)
+- [Generate `PlatformInfo` values](https://dortania.github.io/OpenCore-Install-Guide/config.plist/coffee-lake.html#platforminfo)
+- [OpenCore Sanity Checker](https://opencore.slowgeek.com/)

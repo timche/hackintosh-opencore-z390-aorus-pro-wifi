@@ -13,7 +13,7 @@ Don't use and trust any OpenCore files (drivers, kexts, etc.) that are not from 
 ## Software
 
 - OpenCore: 0.6.5
-- macOS: 10.5.7 (Catalina)
+- macOS: 11.2.3 (Big Sur)
 
 ## Hardware
 

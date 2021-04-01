@@ -18,6 +18,7 @@ Don't use and trust any OpenCore files (drivers, kexts, etc.) that are not from 
 ## Hardware
 
 - Motherboard: Gigabyte Z390 Aorus Pro WiFi
+  - Note: WiFi/Bluetooth is handled by an external card (see below).
 - CPU: Intel Core i7-9700K
 - iGPU: Intel UHD Graphics 630
 - GPU: ASUS ROG Strix GeForce GTX 1070 Ti Advanced OC _(Disabled)_
@@ -26,6 +27,7 @@ Don't use and trust any OpenCore files (drivers, kexts, etc.) that are not from 
   - Crucial MX500 500GB M.2
   - Crucial BX100 250GB 2.5"
   - Crucial M500 120GB 2.5"
+- WiFi/Bluetooth: Fenvi T919
 
 ### Peripherals
 
@@ -50,12 +52,13 @@ Only essential features are listed below and may be incomplete, but updated/fixe
 - iServices
   - FaceTime
   - iMessage
+- Airdrop
+- Bluetooth
+- WiFi
 
 ### Not Working
 
 - USB 2.0
-- Bluetooth
-- WiFi _(Disabled anyway)_
 
 ## `config.plist`
 

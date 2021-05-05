@@ -48,17 +48,13 @@ Only essential features are listed below and may be incomplete, but updated/fixe
 - Front Audio
 - HDMI Audio
 - Ethernet
-- USB 3.0
+- USB 2.0/3.0/3.1
 - iServices
   - FaceTime
   - iMessage
 - Airdrop
 - Bluetooth
 - WiFi
-
-### Not Working
-
-- USB 2.0
 
 ## `config.plist`
 

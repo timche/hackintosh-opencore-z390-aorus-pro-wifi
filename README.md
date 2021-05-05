@@ -6,9 +6,11 @@
 
 ## Disclaimer
 
-This is my personal configuration and I made it publicly available for educational and inspirational purposes only. Please learn how to configure and install OpenCore using the [OpenCore Install Guide](https://dortania.github.io/OpenCore-Install-Guide/). I'm not responsible for any damage nor will I give support.
+This is my personal configuration and I made it publicly available for educational and inspirational purposes only. Please learn how to configure and install OpenCore using the [OpenCore Install Guide](https://dortania.github.io/OpenCore-Install-Guide/).
 
-Don't use and trust any OpenCore files (drivers, kexts, etc.) that are not from the official sources. Always gather/compile them yourself.
+I'm not responsible for any damage nor will I give support.
+
+**Note:** Don't use or trust any OpenCore files (drivers, kexts, etc.) that are not from the official sources. Always gather/compile them yourself.
 
 ## Software
 
@@ -24,14 +26,15 @@ Don't use and trust any OpenCore files (drivers, kexts, etc.) that are not from 
 - GPU: ASUS ROG Strix GeForce GTX 1070 Ti Advanced OC _(Disabled)_
 - RAM: Corsair 16GB DDR4 Vengeance LPX 3200 MHz
 - SSD:
-  - Crucial MX500 500GB M.2
-  - Crucial BX100 250GB 2.5"
-  - Crucial M500 120GB 2.5"
+  - WD_BLACK SN750 NVMe 1TB, M.2
+  - Crucial MX500 500GB, M.2
+  - Crucial BX100 250GB, 2.5"
+  - Crucial M500 120GB, 2.5"
 - WiFi/Bluetooth: Fenvi T919
 
 ### Peripherals
 
-- Mouse: Logitech G Pro Wireless
+- Mouse: Logitech G Pro X Superlight
 - Keyboard: KBC Poker 3
 - Headset: Kingston HyperX Cloud
 - Speakers: Audioengine A2+
@@ -44,9 +47,7 @@ Only essential features are listed below and may be incomplete, but updated/fixe
 ### Working
 
 - Hardware Acceleration
-- Onboard Audio
-- Front Audio
-- HDMI Audio
+- Onboard/Front/HDMI Audio
 - Ethernet
 - USB 2.0/3.0/3.1
 - iServices

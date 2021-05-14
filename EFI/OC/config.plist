@@ -364,24 +364,6 @@
 				<key>MinKernel</key>
 				<string></string>
 				<key>ExecutablePath</key>
-				<string>Contents/MacOS/NVMeFix</string>
-				<key>Arch</key>
-				<string>Any</string>
-				<key>BundlePath</key>
-				<string>NVMeFix.kext</string>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string></string>
-				<key>MaxKernel</key>
-				<string></string>
-				<key>PlistPath</key>
-				<string>Contents/Info.plist</string>
-				<key>Enabled</key>
-				<true/>
-				<key>MinKernel</key>
-				<string></string>
-				<key>ExecutablePath</key>
 				<string>Contents/MacOS/SMCProcessor</string>
 				<key>Arch</key>
 				<string>Any</string>
@@ -418,11 +400,11 @@
 				<key>MinKernel</key>
 				<string></string>
 				<key>ExecutablePath</key>
-				<string>Contents/MacOS/WhateverGreen</string>
+				<string></string>
 				<key>Arch</key>
 				<string>Any</string>
 				<key>BundlePath</key>
-				<string>WhateverGreen.kext</string>
+				<string>USBMap.kext</string>
 			</dict>
 			<dict>
 				<key>Comment</key>
@@ -436,11 +418,11 @@
 				<key>MinKernel</key>
 				<string></string>
 				<key>ExecutablePath</key>
-				<string></string>
+				<string>Contents/MacOS/WhateverGreen</string>
 				<key>Arch</key>
 				<string>Any</string>
 				<key>BundlePath</key>
-				<string>USBMap.kext</string>
+				<string>WhateverGreen.kext</string>
 			</dict>
 		</array>
 		<key>Block</key>

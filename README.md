@@ -14,7 +14,7 @@ I'm not responsible for any damage nor will I give support.
 
 ## Software
 
-- OpenCore: 0.6.9
+- OpenCore: 0.7.2
 - macOS: 11.3.1 (Big Sur)
 
 ## Hardware

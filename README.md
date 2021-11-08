@@ -15,7 +15,7 @@ I'm not responsible for any damage nor will I give support.
 ## Software
 
 - OpenCore: 0.7.2
-- macOS: 11.5.1 (Big Sur)
+- macOS: 12.0.1 (Monterey)
 
 ## Hardware
 
